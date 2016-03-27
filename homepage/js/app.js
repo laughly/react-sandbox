@@ -8,7 +8,6 @@
  */
 
 var React = require('react');
-
 var NavBar = require('./components/NavBar.react');
 
 React.render(

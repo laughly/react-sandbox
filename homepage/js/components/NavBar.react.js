@@ -11,7 +11,6 @@
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
 
-
 var NavBar = React.createClass({
   propTypes: {
 
@@ -35,7 +34,7 @@ var NavBar = React.createClass({
 
     );
   },
-  
+
 });
 
 module.exports = NavBar;
