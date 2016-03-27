@@ -13,16 +13,11 @@ var ReactPropTypes = React.PropTypes;
 
 
 var NavBar = React.createClass({
-
   propTypes: {
 
   },
 
-  /**
-   * @return {object}
-   */
   render: function() {
-  
   return (
   <div className="navbar">
     <div className="navbar-inner">
@@ -40,8 +35,7 @@ var NavBar = React.createClass({
 
     );
   },
-
-
+  
 });
 
 module.exports = NavBar;
