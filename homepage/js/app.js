@@ -10,19 +10,37 @@
 var React = require('react');
 var NavBar = require('./components/NavBar.react');
 var Payments = require('./components/Payments.react');
+var Settings = require('./components/Settings.react');
+const ReactRouter = require('react-router');
+
+const Router = ReactRouter.Router,
+	Route = ReactRouter.Route,
+	hashHistory = ReactRouter.hashHistory,
+	Redirect = ReactRouter.Redirect;
 
 var App = React.createClass({
 	render: function() {
 		return (
 			<div>
 				<NavBar/>
-				<Payments/>
+				{this.props.children}
 			</div>
 		)
 	}
-})
+});
 
-React.render(
-  <App />,
+
+const routes = (
+	<Router history={hashHistory}>
+		<Route path="/" component={App}>
+			<Route path="/payments" component={Payments}/>
+			<Route path="/settings" components={Settings}/>
+		</Route>
+	</Router>
+);
+
+
+
+React.render(routes,
   document.getElementById('app')
 );
