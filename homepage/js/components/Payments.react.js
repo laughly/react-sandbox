@@ -6,6 +6,8 @@ var ReactPropTypes = React.PropTypes;
 var Balance = require('./Balance.react');
 var BankInfo = require('./BankInfo.react');
 var PaymentHistory = require('./PaymentHistory.react');
+var PageTitle = require('./PageTitle.react');
+
 
   var style = {
     backgroundColor: 'grey',
@@ -18,34 +20,41 @@ var Payments = React.createClass({
   propTypes: {
 
   },
-
-
+/*
+     <div>
+      <PageTitle/>
+      <div className="row">
+        <div className="span12">
+          <div className="row">
+            <div className="span4"><Balance/></div>
+            <div className="span8"><PaymentHistory/></div>
+          </div>
+          <div className="row">
+            <div className="span12"><BankInfo/></div>
+          </div>
+        </div>
+      </div>  
+    </div>*/
   render: function() {
     return (
      <div>
-   
-      <div className = 'sectionTitle'>
-        <h1>Payments</h1>
-        <h2>View payment information and history</h2>
+      <div>
+      <PageTitle/>
       </div>
-    <div className="row">
-  
 
-    <div className="span12">
       <div className="row">
-        <div className="span4"><Balance/></div>
-        <div className="span8"><PaymentHistory/></div>
-      </div>
-      <div className="row">
-        <div className="span12">
-          <BankInfo/>
+        <div className="col-md-6">
+          <Balance/>
+           <BankInfo/>
+        </div>
+        <div className="col-md-6">
+          <PaymentHistory/>
         </div>
       </div>
+     
+
+       
     </div>
-  </div>  
-
-
-</div>
 
 
     );

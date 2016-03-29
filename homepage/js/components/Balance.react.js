@@ -3,10 +3,9 @@ var React = require('react');
 var ReactPropTypes = React.PropTypes;
 
 
-  var style = {
-    backgroundColor: 'green',
-    width: '250px',
-    height: '250px'
+var style = {
+    width: '300px',
+
   }
 
 var Balance = React.createClass({
@@ -18,13 +17,11 @@ var Balance = React.createClass({
 
   render: function() {
     return (
-<div className="container">
-
+<div className="container" style={style}>
     <div className="panel panel-primary">
-      <div className="panel-heading">Panel with panel-primary class</div>
-      <div className="panel-body">Panel Content</div>
+      <div className="panel-heading text-center">Balance</div>
+      <div className="panel-body text-center"><strong>$984</strong></div>
     </div>
-
 </div>
     );
   },
