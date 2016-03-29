@@ -10,6 +10,7 @@
 
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
+var NavLink   = require('./NavLink.react');
 
 var NavBar = React.createClass({
   propTypes: {
@@ -23,13 +24,13 @@ var NavBar = React.createClass({
      <div className="navbar-header">
         <a className="navbar-brand" href="#">Laugh.ly</a>
       </div>
-      <ul className="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Biography</a></li>
-        <li><a href="#">Catalog</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Payments</a></li>
-        <li><a href="#">Settings</a></li>
+      <ul role="nav" className="nav navbar-nav">
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/">Biography</NavLink></li>
+        <li><NavLink to="/">Catalog</NavLink></li>
+        <li><NavLink to="/">Analytics</NavLink></li>
+        <li><NavLink to="/payments">Payments</NavLink></li>
+        <li><NavLink to="/settings">Settings</NavLink></li>
       </ul>
     </div>
   </nav>
@@ -39,3 +40,5 @@ var NavBar = React.createClass({
 });
 
 module.exports = NavBar;
+
+// navbar-nav
