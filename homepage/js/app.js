@@ -9,8 +9,20 @@
 
 var React = require('react');
 var NavBar = require('./components/NavBar.react');
+var Payments = require('./components/Payments.react');
+
+var App = React.createClass({
+	render: function() {
+		return (
+			<div>
+				<NavBar/>
+				<Payments/>
+			</div>
+		)
+	}
+})
 
 React.render(
-  <NavBar />,
-  document.getElementById('navbar')
+  <App />,
+  document.getElementById('app')
 );
