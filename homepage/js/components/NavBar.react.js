@@ -18,10 +18,12 @@ var NavBar = React.createClass({
 
   render: function() {
   return (
-  <div className="navbar">
-    <div className="navbar-inner">
-      <a className="brand" href="#">Laughly</a>
-      <ul className="nav">
+  <nav className="navbar navbar-default">
+     <div className="container-fluid">
+     <div className="navbar-header">
+        <a className="navbar-brand" href="#">Laugh.ly</a>
+      </div>
+      <ul className="nav navbar-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Biography</a></li>
         <li><a href="#">Catalog</a></li>
@@ -30,8 +32,7 @@ var NavBar = React.createClass({
         <li><a href="#">Settings</a></li>
       </ul>
     </div>
-  </div>
-
+  </nav>
     );
   },
 
