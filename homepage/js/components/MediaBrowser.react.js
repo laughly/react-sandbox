@@ -1,10 +1,7 @@
 //Media Browser component
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
-
-
-
-  var style = {
+var style = {
     backgroundColor: 'grey',
     width: '700px',
     height: '270px',
