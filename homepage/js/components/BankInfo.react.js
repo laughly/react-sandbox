@@ -13,15 +13,14 @@ var BankInfo = React.createClass({
   },
 
 
-//<button type="button" className="btn btn-success">Add Bank</button>
   render: function() {
     return (
       <div className="container" style={style}>
         <div className="panel panel-primary">
-        <div className="panel-heading text-center">Bank Information</div>
-        <div className="panel-body text-center"><strong>Account # 93345345</strong></div>
+          <div className="panel-heading text-center">Bank Information</div>
+          <div className="panel-body text-center"><strong>Account # 93345345</strong></div>
+        </div>
       </div>
-</div>
     );
   },
 

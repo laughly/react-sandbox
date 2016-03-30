@@ -20,28 +20,13 @@ var Payments = React.createClass({
   propTypes: {
 
   },
-/*
-     <div>
-      <PageTitle/>
-      <div className="row">
-        <div className="span12">
-          <div className="row">
-            <div className="span4"><Balance/></div>
-            <div className="span8"><PaymentHistory/></div>
-          </div>
-          <div className="row">
-            <div className="span12"><BankInfo/></div>
-          </div>
-        </div>
-      </div>  
-    </div>*/
+
   render: function() {
     return (
-     <div>
+     <div className="container">
       <div>
-      <PageTitle/>
+        <PageTitle title="Payments" subtitle="View your payment information and history."/>
       </div>
-
       <div className="row">
         <div className="col-md-6">
           <Balance/>

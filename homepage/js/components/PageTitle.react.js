@@ -6,8 +6,8 @@ var ReactPropTypes = React.PropTypes;
 
 var PageTitle = React.createClass({
   propTypes: {
-      title: ReactPropTypes.string,
-      subtitle: ReactPropTypes.string,
+      title: ReactPropTypes.string.isRequired,
+      subtitle: ReactPropTypes.string.isRequired,
   },
 
 
@@ -15,8 +15,8 @@ var PageTitle = React.createClass({
   render: function() {
     return (
       <div className = 'sectionTitle'>
-        <h1>Payments</h1>
-        <h2>View payment information and history</h2>
+        <h1 className="pageTitle">{this.props.title}</h1>
+        <h2 className="pageSubtitle">{this.props.subtitle}</h2>
       </div>
     );
   },

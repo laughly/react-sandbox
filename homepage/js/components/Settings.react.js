@@ -2,6 +2,11 @@
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
 
+var PageTitle = require('./PageTitle.react');
+var SettingsBox = require('./SettingsBox.react');
+
+
+
 
 var Settings = React.createClass({
   propTypes: {
@@ -10,10 +15,10 @@ var Settings = React.createClass({
 
   render: function() {
   return (
-  <div >
-   Settings
-  </div>
-
+    <div className = "container">
+      <PageTitle title="Settings" subtitle="Here is where you can control your settings"/>
+      <SettingsBox section="Account Settings"/>
+    </div>
     );
   },
 
