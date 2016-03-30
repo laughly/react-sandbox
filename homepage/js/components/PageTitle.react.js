@@ -15,8 +15,8 @@ var PageTitle = React.createClass({
   render: function() {
     return (
       <div className = 'sectionTitle'>
-        <h1>{this.props.title}</h1>
-        <h2>{this.props.subtitle}</h2>
+        <h1 className="pageTitle">{this.props.title}</h1>
+        <h2 className="pageSubtitle">{this.props.subtitle}</h2>
       </div>
     );
   },

@@ -15,7 +15,7 @@ var Settings = React.createClass({
 
   render: function() {
   return (
-    <div >
+    <div className = "container">
       <PageTitle title="Settings" subtitle="Here is where you can control your settings"/>
       <SettingsBox section="Account Settings"/>
     </div>

@@ -12,10 +12,9 @@ var Biography = React.createClass({
 
   render: function() {
     return (
-      <div >
+      <div className="container">
         Biography
       </div>
-
     );
   },
 

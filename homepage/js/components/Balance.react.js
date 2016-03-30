@@ -13,19 +13,16 @@ var Balance = React.createClass({
 
   },
 
-
-
   render: function() {
     return (
-<div className="container" style={style}>
-    <div className="panel panel-primary">
-      <div className="panel-heading text-center">Balance</div>
-      <div className="panel-body text-center"><strong>$984</strong></div>
-    </div>
-</div>
+      <div className="container" style={style}>
+          <div className="panel panel-primary">
+            <div className="panel-heading text-center">Balance</div>
+            <div className="panel-body text-center"><strong>$984</strong></div>
+          </div>
+      </div>
     );
   },
-
 });
 
 module.exports = Balance;

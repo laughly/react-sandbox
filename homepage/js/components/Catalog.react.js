@@ -2,7 +2,7 @@
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
 
-
+var PageTitle = require('./PageTitle.react');
 
 
 var Catalog = React.createClass({
@@ -12,10 +12,9 @@ var Catalog = React.createClass({
 
   render: function() {
   	return (
-  		<div >
-			Catalog
+  		<div className="container">
+			<PageTitle title="View Catalog" subtitle="View current catalog or publish new album"/>
   		</div>
-
     );
   },
 

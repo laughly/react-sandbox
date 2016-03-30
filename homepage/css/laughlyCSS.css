@@ -33,6 +33,10 @@
 }
 
 
+
+body{
+	
+}
 .statBox{
 	height: 160px;
 	width: 160px;
@@ -43,16 +47,39 @@
 
 }
 
-.statText{
+.laughNav{
 
 }
+
+.laughNavItem{
+	color: #E6E7E8
+}
+.statText{
+	position:relative;
+left:50%;
+float:left;
+clear:left;
+margin-bottom:10
+}
+
+h1{
+	 font-family: "Lato Lite"
+}
+h2{
+	 font-family: "Lato Regular"
+}
+
 .statTitle{
 	font-size: 24px;
 
 }
 
 .statNumber{
- 
+ position:relative;
+left:50%;
+float:left;
+clear:left;
+margin-bottom:10
 }
 
 .pageTitle{
