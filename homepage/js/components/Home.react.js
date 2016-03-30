@@ -24,26 +24,6 @@ var Home = React.createClass({
   	profilePic: ReactPropTypes.string
   },
 
-
-/*
-  <div className="row">
-
-  <div className="span12">
-    <div className="row">
-      <div className="span3" id='profilepic' style={profilePicStyle}></div>
-      <div className="span9">Comedian Name</div>
-    </div>
-     <div className="row">
-      <div className="span12"><MediaBroswer/></div>
-     </div>
-    <div className="row">
-      <div className="span6"><AnalyticSnapshot/></div>
-      <div className="span6"><PaymentSnapshot/></div>
-    </div>
-  </div>
-</div>
-*/
-
   render: function() {
     return (
       <div className="container">
